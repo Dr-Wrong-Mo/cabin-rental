@@ -1,0 +1,25 @@
+#overview {
+  background-color: #fafafa;
+
+  h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+
+    @media (max-device-width: $bp-small) {
+      ont-size: 3.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #696969;
+    columns: 2;
+    line-height: 1.8;
+
+    @media (max-device-width: $bp-small) {
+      columns: 1;
+    }
+  }
+}

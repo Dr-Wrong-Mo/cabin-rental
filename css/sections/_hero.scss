@@ -1,0 +1,111 @@
+#hero {
+  height: 45vh;
+  min-height: 35rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1602081850519-24694aee87e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80');
+  background-size: cover;
+  background-position: center 45%;
+  color: white;
+  padding: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__label {
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+
+  &__button {
+    &--text {
+      font-size: 2rem;
+      font-weight: 200;
+
+      @media (max-device-width: $bp-small) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__box {
+    height: 2.5rem;
+    width: 15rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.15s, background 0.15s;
+
+    @media (max-device-width: $bp-small) {
+      height: 2rem;
+      width: 12.5rem;
+    }
+
+    @media (max-device-width: $bp-smallest) {
+      height: 2rem;
+      width: 10rem;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: var(--red-800);
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 200;
+
+    @media (max-device-width: $bp-small) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-device-width: $bp-smallest) {
+      font-size: 2rem;
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+
+    @media (max-device-width: $bp-small) {
+      font-size: 1.75rem;
+    }
+
+    @media (max-device-width: $bp-smallest) {
+      font-size: 1.5rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    font-weight: 200;
+    margin-top: 2.5rem;
+
+    @media (max-device-width: $bp-small) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-device-width: $bp-smallest) {
+      font-size: 1.3rem;
+    }
+  }
+}

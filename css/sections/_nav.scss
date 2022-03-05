@@ -1,0 +1,45 @@
+nav {
+  padding: 3.5rem;
+
+  @media (max-device-width: $bp-medium) {
+    padding: 2.5rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: inline;
+      border-bottom: 2px solid transparent;
+
+      &:hover,
+      &:focus-within {
+        border-bottom: 2px solid var(--red-600);
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: var(--red-800);
+
+        @media (max-device-width: $bp-medium) {
+          font-size: 2rem;
+        }
+
+        @media (max-device-width: $bp-small) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-device-width: $bp-smallest) {
+          font-size: 1.25rem;
+        }
+
+        &:hover {
+          color: var(--red-600);
+        }
+      }
+    }
+  }
+}
