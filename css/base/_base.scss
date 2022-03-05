@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -60,4 +61,23 @@ body > * {
 // Hide SVG elements from displaying on page
 #svg {
   display: none;
+}
+
+.upArrow {
+  // cursor: pointer;
+  position: absolute;
+  bottom: 3.5rem;
+  right: 3.5rem;
+  height: 7.5rem;
+  width: 7.5rem;
+  z-index: 100;
+}
+
+#scrollToTop:hover svg #upArrow,
+#upArrow:focus {
+  fill: yellow;
+}
+
+#upArrow {
+  fill: orangered;
 }
