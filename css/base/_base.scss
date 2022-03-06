@@ -51,7 +51,7 @@ body > * {
   border-right: 2px solid var(--grey-300);
   box-shadow: 0px 0px 20px var(--grey-600);
 
-  @media (max-device-width: 1100px) {
+  @media (max-width: 1100px) {
     border-left: none;
     border-right: none;
     box-shadow: none;

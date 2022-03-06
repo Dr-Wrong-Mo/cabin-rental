@@ -5,7 +5,7 @@ footer {
   display: flex;
   justify-content: space-around;
 
-  @media (max-device-width: $bp-smallest) {
+  @media (max-width: $bp-small) {
     flex-direction: column;
   }
 
@@ -21,7 +21,7 @@ footer {
         font-size: 1.7rem;
         color: #fff;
 
-        @media (max-device-width: $bp-small) {
+        @media (max-width: $bp-small) {
           font-size: 1.25rem;
         }
 

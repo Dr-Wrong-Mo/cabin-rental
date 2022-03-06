@@ -27,7 +27,7 @@
       font-size: 2rem;
       font-weight: 200;
 
-      @media (max-device-width: $bp-small) {
+      @media (max-width: $bp-small) {
         font-size: 1.5rem;
       }
     }
@@ -45,12 +45,12 @@
     margin-bottom: 1.5rem;
     transition: color 0.15s, background 0.15s;
 
-    @media (max-device-width: $bp-small) {
+    @media (max-width: $bp-small) {
       height: 2rem;
       width: 12.5rem;
     }
 
-    @media (max-device-width: $bp-smallest) {
+    @media (max-width: $bp-smallest) {
       height: 2rem;
       width: 10rem;
     }
@@ -73,11 +73,11 @@
     font-size: 3.5rem;
     font-weight: 200;
 
-    @media (max-device-width: $bp-small) {
+    @media (max-width: $bp-small) {
       font-size: 2.5rem;
     }
 
-    @media (max-device-width: $bp-smallest) {
+    @media (max-width: $bp-smallest) {
       font-size: 2rem;
     }
   }
@@ -86,11 +86,11 @@
     font-size: 2.5rem;
     font-weight: 200;
 
-    @media (max-device-width: $bp-small) {
+    @media (max-width: $bp-small) {
       font-size: 1.75rem;
     }
 
-    @media (max-device-width: $bp-smallest) {
+    @media (max-width: $bp-smallest) {
       font-size: 1.5rem;
     }
   }
@@ -100,11 +100,11 @@
     font-weight: 200;
     margin-top: 2.5rem;
 
-    @media (max-device-width: $bp-small) {
+    @media (max-width: $bp-small) {
       font-size: 1.5rem;
     }
 
-    @media (max-device-width: $bp-smallest) {
+    @media (max-width: $bp-smallest) {
       font-size: 1.3rem;
     }
   }

@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @media (max-device-width: $bp-smallest) {
+  @media (max-width: $bp-smallest) {
     padding: 2rem 1rem;
   }
 }
