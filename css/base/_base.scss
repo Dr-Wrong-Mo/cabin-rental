@@ -63,21 +63,44 @@ body > * {
   display: none;
 }
 
-.upArrow {
-  // cursor: pointer;
+#scrollToTop {
   position: absolute;
   bottom: 3.5rem;
   right: 3.5rem;
-  height: 7.5rem;
-  width: 7.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 5.5rem;
+  width: 5.5rem;
+
+  border-radius: 100%;
   z-index: 100;
+
+  overflow: hidden;
 }
 
-#scrollToTop:hover svg #upArrow,
-#upArrow:focus {
-  fill: yellow;
+.upArrow {
+  height: 8.5rem;
+  width: 8.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    background-color: #605859;
+  }
 }
 
 #upArrow {
-  fill: orangered;
+  fill: var(--red-800);
+}
+
+#scrollToTop:hover svg path {
+  fill: yellow;
 }
